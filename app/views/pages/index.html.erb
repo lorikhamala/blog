@@ -1,0 +1,21 @@
+<h1> Blog Pages </h1>
+
+<% @pages.each do |page| %>
+	<p><%= link_to page.title "/pages/#{page.id}" %></p>
+<% end %>
+
+
+<%# example of how erb tags work- printing if evaluating to true  %>
+<%# <% grade = 70  %>
+<%# <% if grade > 60  %>
+	<%# You passed! %>
+<%# <% end  %>
+
+<%# loops %>
+<%# <% 4.times do %>
+<!-- <p> fish </p> -->
+<%# end %>
+
+ <%# <% 4.times do |index| %>
+<!-- <p> <%#= index %> fish </p> -->
+<%# end %>
